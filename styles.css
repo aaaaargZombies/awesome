@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap");
+
+:root {
+  --color-background-grey-1: #f1f2f3;
+  --color-background-grey-2: #f7f7f7;
+  --color-text-grey-1: #707070;
+  --color-text-grey-2: #282727;
+  --color-primary-blue: #2581c4;
+  --color-border-grey-1: #ececec;
+  --color-border-grey-2: #c6c6c6;
+}
+html {
+  box-sizing: border-box;
+}
