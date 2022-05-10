@@ -8,7 +8,76 @@
   --color-primary-blue: #2581c4;
   --color-border-grey-1: #ececec;
   --color-border-grey-2: #c6c6c6;
+  --font-size-idea: 0.9rem;
 }
 html {
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-text-grey-1);
+  background-color: var(--color-background-grey-1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+main {
+  display: grid;
+  grid-template: 1fr 5fr / repeat(3, 1fr);
+  column-gap: 2rem;
+  padding: 4rem;
+}
+
+.title {
+  grid-column: 1 / span 3;
+  border-bottom: 2px solid var(--color-border-grey-1);
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+.idea_section_title {
+  font-size: 1rem;
+}
+.ideas {
+  padding: 0;
+}
+.idea {
+  background-color: white;
+  color: var(--color-primary-blue);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0rem 2rem;
+  margin-bottom: 1rem;
+  min-height: 46.8px;
+}
+
+.idea_title {
+  padding: 1rem 0rem;
+  text-decoration: none;
+  color: var(--color-primary-blue);
+}
+.idea_stats {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.idea_approved {
+  font-size: 0.75rem;
+}
+
+/* tablet potrait */
+@media (max-width: 850px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
 }
