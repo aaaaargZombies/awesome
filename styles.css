@@ -17,6 +17,12 @@ html {
   background-color: var(--color-background-grey-1);
 }
 
+body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
@@ -26,7 +32,26 @@ h6 {
   font-weight: 600;
 }
 
+.sidebar {
+  flex-basis: 5rem;
+  flex-grow: 1;
+  background-color: white;
+  font-size: 0.75rem;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  flex-directon: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  border-bottom: 1px solid var(--color-border-grey-1);
+}
+
 main {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 80%;
   display: grid;
   grid-template: 1fr 5fr / repeat(3, 1fr);
   column-gap: 2rem;
